@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    <title>Materialize - Documentation</title>
+
+    <!-- Android 5 Chrome Color -->
+    <meta name="theme-color" content="#EE6E73">
+
+    <link href="../futuristic-materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="#!">Left First Sidebar Link</a></li>
+            <li><a href="#!">Left Second Sidebar Link</a></li>
+        </ul>
+        <ul id="slide-out" class="sidenav">
+            <li><a href="#!">Left First Sidebar Link</a></li>
+            <li><a href="#!">Left Second Sidebar Link</a></li>
+        </ul>
+        <a href="#" data-target="slide-out" class="sidenav-trigger 1"><i class="material-icons">menu</i></a>
+
+        <ul class="right hide-on-med-and-down">
+            <li><a href="#!">Right First Sidebar Link</a></li>
+            <li><a href="#!">Right Second Sidebar Link</a></li>
+        </ul>
+        <ul id="slide-out2" class="sidenav">
+            <li><a href="#!">Right First Sidebar Link</a></li>
+            <li><a href="#!">Right Second Sidebar Link</a></li>
+        </ul>
+        <a href="#" data-target="slide-out2" class="sidenav-trigger 2 right"><i class="material-icons">menu</i></a>
+    </nav>
+
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="../futuristic-materialize.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#slide-out").sidenav();
+            $("#slide-out2").sidenav({
+                edge: 'right',
+                draggable: false
+            });
+        });
+    </script>
+</body>
+
+</html>
