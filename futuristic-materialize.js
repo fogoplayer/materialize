@@ -1116,6 +1116,13 @@ M.changeTheme = function(config){
         let b = parseInt(config.accent_color.substring(5,7), 16)
         config.accent_rgb = r + ", " + g + ", " + b;
     }
+    if(config.text_color && !config.text_rgb){
+        //TODO add functionality for rgb and color name values
+        let r = parseInt(config.text_color.substring(1,3), 16)
+        let g = parseInt(config.text_color.substring(3,5), 16)
+        let b = parseInt(config.text_color.substring(5,7), 16)
+        config.text_rgb = r + ", " + g + ", " + b;
+    }
     
     //Apply other properties
     for (property in config){
@@ -1123,6 +1130,14 @@ M.changeTheme = function(config){
         document.documentElement.style.setProperty('--'+cssProperty, config[property]);
     }
 }
+
+M.changeTheme({
+    darkest_color:"#f392bd",
+    medium_color:"#d6ff94",
+    background_color:"#0e467d",
+    accent_color:"#FFFFFF",
+    text_color:"#eedd82",
+})
 
 M.keys = {
   TAB: 9,
