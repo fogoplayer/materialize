@@ -1087,17 +1087,20 @@ if (typeof define === 'function' && define.amd) {
 M.changeTheme = function(config){
     //Apply Theme
     if(config.theme){
-        switch(theme){
+        switch(config.theme){
             case "blue":
                 document.documentElement.style.setProperty('--accent-color', '#0892D0');
+                document.documentElement.style.setProperty('--accent-rgb', '8,146,208');
                 break;
                 
             case "red":
                 document.documentElement.style.setProperty('--accent-color', '#FF0000');
+                document.documentElement.style.setProperty('--accent-rgb', '255,0,0');
                 break;
                 
             case "orange":
                 document.documentElement.style.setProperty('--accent-color', '#FFA500');
+                document.documentElement.style.setProperty('--accent-rgb', '8,146,208');
                 break;
                 
             default:
