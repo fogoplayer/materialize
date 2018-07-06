@@ -15,7 +15,6 @@ While there is a default blue theme, you can change the theme by calling `M.chan
 |background_color|Used for page background              |
 |accent_color    |Used as accents throughout            |
 |text_color      |Used for text                         |
-|light_text_color|Lighter text for buttons              |
 
 Currently only hex codes are supported.
 

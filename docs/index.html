@@ -1006,6 +1006,86 @@
         <div class="chips no-autoinit chips-placeholder"></div>
         <div class="chips no-autoinit chips-autocomplete"></div>
 
+        <h3>Pickers</h3>
+
+        <h4>Date Picker</h4>
+        <input type="text" class="datepicker">
+
+        <h4>Time Picker</h4>
+        <input type="text" class="timepicker">
+
+        <h3>HTML5 Range</h3>
+        <form action="#">
+            <p class="range-field">
+                <input type="range" id="test5" min="0" max="100" />
+            </p>
+        </form>
+
+        <h3>Switches</h3>
+        <h4>Switch</h4>
+        <div class="switch">
+            <label>
+                Off
+                <input type="checkbox">
+                <span class="lever"></span>
+                On
+            </label>
+        </div>
+
+        <h4>Disabled Switch</h4>
+        <div class="switch">
+            <label>
+                Off
+                <input disabled type="checkbox">
+                <span class="lever"></span>
+                On
+            </label>
+        </div>
+
+        <h3>Text Inputs</h3>
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                        <label for="first_name">First Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="last_name" type="text" class="validate">
+                        <label for="last_name">Last Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input disabled value="I am not editable" id="disabled" type="text" class="validate">
+                        <label for="disabled">Disabled</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="password" type="password" class="validate">
+                        <label for="password">Password</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        This is an inline input field:
+                        <div class="input-field inline">
+                            <input id="email_inline" type="email" class="validate">
+                            <label for="email_inline">Email</label>
+                            <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
     </div>
     <footer class="page-footer">
         <div class="container">
@@ -1057,20 +1137,39 @@
         //Code to initialize the various onscreen elements
         document.addEventListener('DOMContentLoaded', function() {
             console.log('initialized');
-            M.init();
-            
+            M.AutoInit();
+
             //Autocomplete
             let elems = document.querySelectorAll('.autocomplete');
-            let instances = M.Autocomplete.init(elems, options);
-            
+            let instances = M.Autocomplete.init(elems, {});
+
             //Chips
             elems = document.querySelectorAll('.chips-initial');
-            instances = M.Chips.init(elems, { data: [{ tag: 'Apple', }, { tag: 'Microsoft', }, { tag: 'Google', }], });
+            instances = M.Chips.init(elems, {
+                data: [{
+                    tag: 'Apple',
+                }, {
+                    tag: 'Microsoft',
+                }, {
+                    tag: 'Google',
+                }],
+            });
             elems = document.querySelectorAll('.chips-placeholder');
-            instances = M.Chips.init(elems, placeholder: 'Enter a tag', secondaryPlaceholder: '+Tag', });
+            instances = M.Chips.init(elems, {
+                placeholder: 'Enter a tag',
+                secondaryPlaceholder: '+Tag',
+            });
             elems = document.querySelectorAll('.chips-autcomplete');
-            instances = M.Chips.init(elems, { data: { 'Apple': null, 'Microsoft': null, 'Google': null }, limit: Infinity, minLength: 1 } });
-            
+            instances = M.Chips.init(elems, {
+                data: {
+                    'Apple': null,
+                    'Microsoft': null,
+                    'Google': null
+                },
+                limit: Infinity,
+                minLength: 1
+            });
+
         });
     </script>
 </body>
