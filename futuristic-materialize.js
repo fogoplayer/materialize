@@ -1084,6 +1084,31 @@ if (typeof define === 'function' && define.amd) {
   exports.default = M;
 }
 
+M.changeTheme = function(config){
+    if(config.theme){
+        switch(theme){
+            case "blue":
+                document.documentElement.style.setProperty('--accent-color', '#0892D0');
+                break;
+                
+            case "red":
+                document.documentElement.style.setProperty('--accent-color', '#FF0000');
+                break;
+                
+            case "orange":
+                document.documentElement.style.setProperty('--accent-color', '#FFA500');
+                break;
+                
+            default:
+                console.error("Theme is not supported");
+        }
+    }
+    for (property in config){
+        const cssProperty = property.replace(/_/, '-');
+        document.documentElement.style.setProperty('--'+cssProperty, config[property]);
+    }
+}
+
 M.keys = {
   TAB: 9,
   ENTER: 13,
