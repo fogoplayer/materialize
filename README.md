@@ -15,3 +15,5 @@ Making my way through the test suite, I am currently on badges.html
 I need to take a closer clook at scrollfire and scrollspy to figure out what they are doing.
 
 Before running second round of tests, remove all color modifiers.
+
+Make sure there are no instances of #26a69a left
