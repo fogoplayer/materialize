@@ -1131,14 +1131,6 @@ M.changeTheme = function(config){
     }
 }
 
-M.changeTheme({
-    darkest_color:"#f392bd",
-    medium_color:"#d6ff94",
-    background_color:"#0e467d",
-    accent_color:"#FFFFFF",
-    text_color:"#eedd82",
-})
-
 M.keys = {
   TAB: 9,
   ENTER: 13,
