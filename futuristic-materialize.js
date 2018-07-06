@@ -1085,6 +1085,7 @@ if (typeof define === 'function' && define.amd) {
 }
 
 M.changeTheme = function(config){
+    //Apply Theme
     if(config.theme){
         switch(theme){
             case "blue":
@@ -1103,6 +1104,17 @@ M.changeTheme = function(config){
                 console.error("Theme is not supported");
         }
     }
+    
+    //If accent-color is provided and rgb is not, generate rgb
+    if(config.accent_color && !config.accent_rgb){
+        //TODO add functionality for rgb and color name values
+        let r = parseInt(config.accent_color.substring(1,3), 16)
+        let g = parseInt(config.accent_color.substring(3,5), 16)
+        let b = parseInt(config.accent_color.substring(5,7), 16)
+        config.accent_rgb = r + ", " + g + ", " + b;
+    }
+    
+    //Apply other properties
     for (property in config){
         const cssProperty = property.replace(/_/, '-');
         document.documentElement.style.setProperty('--'+cssProperty, config[property]);
