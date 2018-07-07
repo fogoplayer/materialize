@@ -2893,7 +2893,7 @@ video.responsive-video {
 
 .pagination li.disabled a {
     cursor: default;
-    color: rgba(var(--text-rgb),0.2);
+    color: rgba(var(--text-rgb), 0.2);
 }
 
 .pagination li i {
@@ -3306,7 +3306,7 @@ th {
 }
 
 .collection a.collection-item:not(.active):hover {
-    background-color: rgba(var(--accent-rgb),0.2);
+    background-color: rgba(var(--accent-rgb), 0.2);
 }
 
 .collection.with-header .collection-header {
@@ -3542,8 +3542,9 @@ span.badge.new {
     background-color: inherit;
     border-radius: 2px;
 }
-span.badge.new:not(.red):not(.pink):not(.purple):not(.deep-purple):not(.indigo):not(.blue):not(.light-blue):not(.cyan):not(.teal):not(.green):not(.light-green):not(.lime):not(.yellow):not(.amber):not(.orange):not(.deep-orange):not(.brown):not(.grey):not(.blue-grey):not(.black):not(.white){
-    border:1px solid var(--accent-color);
+
+span.badge.new:not(.red):not(.pink):not(.purple):not(.deep-purple):not(.indigo):not(.blue):not(.light-blue):not(.cyan):not(.teal):not(.green):not(.light-green):not(.lime):not(.yellow):not(.amber):not(.orange):not(.deep-orange):not(.brown):not(.grey):not(.blue-grey):not(.black):not(.white) {
+    border: 1px solid var(--accent-color);
 }
 
 span.badge.new:after {
@@ -5472,7 +5473,7 @@ small {
 .btn-large:focus,
 .btn-small:focus,
 .btn-floating:focus {
-    background-color:rgba(var(--accent-rgb),0.2);
+    background-color: rgba(var(--accent-rgb), 0.2);
 }
 
 .btn,
@@ -5492,7 +5493,7 @@ small {
 .btn:hover,
 .btn-large:hover,
 .btn-small:hover {
-    background-color:rgba(var(--accent-rgb),0.2);
+    background-color: rgba(var(--accent-rgb), 0.2);
 }
 
 .btn-floating {
@@ -5738,7 +5739,7 @@ button.btn-floating {
 
 .btn-flat:focus,
 .btn-flat:hover {
-    background-color:rgba(var(--accent-rgb),0.2);
+    background-color: rgba(var(--accent-rgb), 0.2);
 }
 
 .btn-flat:focus {
@@ -5747,7 +5748,7 @@ button.btn-floating {
 
 .btn-flat.disabled,
 .btn-flat.btn-flat[disabled] {
-    border:0;
+    border: 0;
 }
 
 .btn-large {
@@ -5806,7 +5807,7 @@ button.btn-floating {
 
 .dropdown-content li:hover,
 .dropdown-content li.active {
-    background-color: rgba(var(--accent-rgb),0.2)
+    background-color: rgba(var(--accent-rgb), 0.2)
 }
 
 .dropdown-content li:focus {
@@ -5842,7 +5843,7 @@ button.btn-floating {
 }
 
 body.keyboard-focused .dropdown-content li:focus {
-    background-color: rgba(var(--accent-rgb),0.2)
+    background-color: rgba(var(--accent-rgb), 0.2)
 }
 
 .input-field.col .dropdown-content [type="checkbox"]+label {
@@ -6114,7 +6115,7 @@ body.keyboard-focused .dropdown-content li:focus {
 }
 
 .collapsible-header:hover {
-    background-color:rgba(var(--accent-rgb),0.2);
+    background-color: rgba(var(--accent-rgb), 0.2);
 }
 
 .collapsible-header i {
@@ -6126,7 +6127,7 @@ body.keyboard-focused .dropdown-content li:focus {
 }
 
 .keyboard-focused .collapsible-header:focus {
-    background-color: rgba(var(--accent-rgb),0.2)
+    background-color: rgba(var(--accent-rgb), 0.2)
 }
 
 .collapsible-body {
@@ -6213,9 +6214,10 @@ body.keyboard-focused .dropdown-content li:focus {
     margin-right: 5px;
 }
 
-.chip:focus, .chip:hover{
+.chip:focus,
+.chip:hover {
     outline: none;
-    background-color: rgba(var(--accent-rgb),0.2);
+    background-color: rgba(var(--accent-rgb), 0.2);
 }
 
 .chip>img {
@@ -6343,7 +6345,7 @@ select:focus {
 }
 
 button:focus {
-    background-color: rgba(var(--accent-rgb),0.2);
+    background-color: rgba(var(--accent-rgb), 0.2);
     outline: 0;
 }
 
@@ -7376,7 +7378,7 @@ textarea.materialize-textarea {
 }
 
 .switch label input[type=checkbox]:checked+.lever {
-    background-color: #84c7c1;
+    background-color: var(--darkest-color);
 }
 
 .switch label input[type=checkbox]:checked+.lever:before,
@@ -7385,7 +7387,8 @@ textarea.materialize-textarea {
 }
 
 .switch label input[type=checkbox]:checked+.lever:after {
-    background-color: var(--accent-color);
+    background-color: var(--darkest-color);
+    border: 1px solid var(--accent-color);
 }
 
 .switch label .lever {
@@ -7394,7 +7397,7 @@ textarea.materialize-textarea {
     position: relative;
     width: 36px;
     height: 14px;
-    background-color: rgba(0, 0, 0, 0.38);
+    background-color: var(--darkest-color);
     border-radius: 15px;
     margin-right: 10px;
     -webkit-transition: background 0.3s ease;
@@ -7420,11 +7423,12 @@ textarea.materialize-textarea {
 }
 
 .switch label .lever:before {
-    background-color: rgba(38, 166, 154, 0.15);
+    background-color:var(--darkest-color);
 }
 
 .switch label .lever:after {
-    background-color: #F1F1F1;
+    background-color: var(--darkest-color);
+    border: 1px solid var(--accent-color);
     -webkit-box-shadow: 0px 3px 1px -2px rgba(var(--accent-rgb), 0.2), 0px 2px 2px 0px rgba(var(--accent-rgb), 0.14), 0px 1px 5px 0px rgba(var(--accent-rgb), 0.12);
     box-shadow: 0px 3px 1px -2px rgba(var(--accent-rgb), 0.2), 0px 2px 2px 0px rgba(var(--accent-rgb), 0.14), 0px 1px 5px 0px rgba(var(--accent-rgb), 0.12);
 }
@@ -7445,12 +7449,14 @@ input[type=checkbox]:not(:disabled).tabbed:focus~.lever::before {
 
 .switch input[type=checkbox][disabled]+.lever {
     cursor: default;
-    background-color: rgba(0, 0, 0, 0.12);
+    background-color: rgba(var(--text-rgb), 0.2);
 }
 
 .switch label input[type=checkbox][disabled]+.lever:after,
 .switch label input[type=checkbox][disabled]:checked+.lever:after {
-    background-color: #949494;
+    background-color: rgba(var(--text-rgb), 0.3);
+    border:0;
+    box-shadow: none;
 }
 
 
@@ -8175,8 +8181,8 @@ input[type=range]::-ms-thumb {
     border-color: var(--accent-color);
 }
 
-.spinner-accent-only{
-    border-color:var(--accent-color);
+.spinner-accent-only {
+    border-color: var(--accent-color);
 }
 
 .spinner-blue,
@@ -9067,10 +9073,11 @@ input[type=range]::-ms-thumb {
     border-radius: 50%
 }
 
-.month-prev > svg,
-.month-next > svg {
-    fill:var(--text-color);
+.month-prev>svg,
+.month-next>svg {
+    fill: var(--text-color);
 }
+
 
 /* Date Display */
 
@@ -9167,7 +9174,7 @@ input[type=range]::-ms-thumb {
 
 .datepicker-day-button:focus {
     background-color: rgba(var(--accent-rgb), 0.25);
-    outline:0;
+    outline: 0;
 }
 
 
