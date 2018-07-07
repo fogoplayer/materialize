@@ -6340,9 +6340,6 @@ body.keyboard-focused .dropdown-content li:focus {
     -webkit-font-smoothing: antialiased;
 }
 
-select:focus {
-    outline: 1px solid #c9f3ef;
-}
 
 button:focus {
     background-color: rgba(var(--accent-rgb), 0.2);
@@ -6794,10 +6791,6 @@ textarea.materialize-textarea+label:after,
     margin-bottom: 1rem;
 }
 
-.input-field.col label {
-    left: 0.75rem;
-}
-
 .input-field.col .prefix~label,
 .input-field.col .prefix~.validate~label {
     width: calc(100% - 3rem - 1.5rem);
@@ -7066,7 +7059,7 @@ textarea.materialize-textarea {
 
 [type="radio"]:not(:checked)+span:before,
 [type="radio"]:not(:checked)+span:after {
-    border: 2px solid rgba(var(--text-rgb),0.2);
+    border: 2px solid rgba(var(--text-rgb), 0.2);
 }
 
 [type="radio"]:not(:checked)+span:after {
@@ -7423,7 +7416,7 @@ textarea.materialize-textarea {
 }
 
 .switch label .lever:before {
-    background-color:var(--darkest-color);
+    background-color: var(--darkest-color);
 }
 
 .switch label .lever:after {
@@ -7455,7 +7448,7 @@ input[type=checkbox]:not(:disabled).tabbed:focus~.lever::before {
 .switch label input[type=checkbox][disabled]+.lever:after,
 .switch label input[type=checkbox][disabled]:checked+.lever:after {
     background-color: rgba(var(--text-rgb), 0.3);
-    border:0;
+    border: 0;
     box-shadow: none;
 }
 
@@ -7472,10 +7465,11 @@ select.browser-default {
 }
 
 select {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: var(--medium-color);
     width: 100%;
     padding: 5px;
-    border: 1px solid #f2f2f2;
+    border: 1px solid var(--accent-color);
+    color:var(--text-color);
     border-radius: 2px;
     height: 3rem;
 }
@@ -7572,11 +7566,11 @@ body.keyboard-focused .select-dropdown.dropdown-content li:focus {
 }
 
 .select-dropdown.dropdown-content li:hover {
-    background-color: rgba(0, 0, 0, 0.08);
+    background-color: rgba(var(--accent-rgb), 0.2);
 }
 
 .select-dropdown.dropdown-content li.selected {
-    background-color: rgba(0, 0, 0, 0.03);
+    background-color: var(--darkest-color);
 }
 
 .prefix~.select-wrapper {
