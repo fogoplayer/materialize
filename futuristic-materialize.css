@@ -5178,8 +5178,8 @@ small {
 
 @media only screen and (min-width: 993px) {
     #toast-container {
-        top: 10%;
-        right: 7%;
+        bottom: 45px;
+        left: 45px;
         max-width: 86%;
     }
 }
@@ -5194,11 +5194,11 @@ small {
     height: auto;
     min-height: 48px;
     line-height: 1.5em;
-    background-color: #323232;
+    background-color: var(--darkest-color);
     padding: 10px 25px;
     font-size: 1.1rem;
     font-weight: 300;
-    color: #fff;
+    color: var(--text-color);
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
