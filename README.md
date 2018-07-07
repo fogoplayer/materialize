@@ -28,8 +28,15 @@ Futuristic Materialize provides a few unique classes.
 
 
 ## todo
-- I need to take a closer clook at scrollfire and scrollspy to figure out what they are doing.
-- Make sure there are no instances of #26a69a left
+- Make sure all colors are variable-ized
 - Card actions and cards aren't using variables
 - Add rgb and color name values to `M.changeTheme()`
-- Add green theme
+- Add green and test themes
+- Add theme creator to site
+- Add left media theme
+- Checkbox labels
+- Orange rgb
+- Tab focus color
+- FAB focus transparency
+- carousel.indicators.indicator-item
+- Anchor links
