@@ -3093,8 +3093,8 @@ ul.staggered-list li {
 
 .page-footer {
     padding-top: 20px;
-    color: var(--medium-color);
-    background-color: #ee6e73;
+    color: var(--text-color);
+    background-color: var(--darkest-color);
 }
 
 .page-footer .footer-copyright {
