@@ -7724,7 +7724,7 @@ input[type=range] {
 
 input[type=range]::-webkit-slider-runnable-track {
     height: 3px;
-    background: #fff;
+    background: var(--darkest-color);
     border: none;
 }
 
@@ -7752,7 +7752,7 @@ input[type=range]::-webkit-slider-thumb {
 
 input[type=range] {
     /* fix for FF unable to apply focus style bug  */
-    border: 1px solid white;
+    border: 0;
     /*required for proper track sizing in FF*/
 }
 
