@@ -6873,6 +6873,7 @@ textarea.materialize-textarea+label:after,
 
 .input-field .prefix~label {
     margin-left: 3rem;
+    left:.75rem;
 }
 
 @media only screen and (max-width: 992px) {
