@@ -750,6 +750,37 @@
             </ul>
         </div>
 
+        <h3>Pulsing</h3>
+        <a class="btn-floating pulse"><i class="material-icons">menu</i></a>
+
+        <h3>Horizontal</h3>
+        <div style="position: relative; height: 70px;">
+            <div class="fixed-action-btn direction-left" style="position: absolute; display: inline-block; right: 24px;">
+                <a class="btn-floating btn-large" id="horizontal"> <i class="large material-icons">mode_edit</i> </a>
+                <ul>
+                    <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+                    <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+                    <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+                    <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>Click-only</h3>
+        <div style="position: relative; height: 70px;">
+            <div class="fixed-action-btn click-to-toggle direction-top direction-left active" style="position: absolute; right: 24px;">
+                <a class="btn-floating btn-large">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul>
+                    <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+                    <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+                    <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+                    <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+                </ul>
+            </div>
+        </div>
+
         <h1 id="material-box">Material Box</h1>
         <div class="divider"></div>
 
@@ -1064,13 +1095,13 @@
             </p>
             <p>
                 <label>
-                    <input name="group1" type="radio" disabled="disabled" />
+                    <input name="group2" type="radio" disabled="disabled" />
                     <span>Disabled</span>
                 </label>
             </p>
             <p>
                 <label>
-                    <input name="group1" class="with-gap" type="radio" disabled="disabled" checked/>
+                    <input name="group2" class="with-gap" type="radio" disabled="disabled" checked/>
                     <span>With Gap</span>
                 </label>
             </p>
@@ -1087,7 +1118,7 @@
         </select>
             <label>Materialize Select</label>
         </div>
-        
+
         <h4>Multiple Select</h4>
         <div class="input-field col s12">
             <select multiple>
@@ -1098,7 +1129,7 @@
         </select>
             <label>Materialize Multiple Select</label>
         </div>
-        
+
         <h4>Optgroups</h4>
         <div class="input-field col s12">
             <select>
@@ -1113,7 +1144,7 @@
         </select>
             <label>Optgroups</label>
         </div>
-        
+
         <h4>Images in select</h4>
         <div class="input-field col s12 m6">
             <select class="icons">
@@ -1124,7 +1155,7 @@
         </select>
             <label>Images in select</label>
         </div>
-        
+
         <h4>Browser Select</h4>
         <p>Not reccomended due to immutable default CSS settings</p>
         <label>Browser Select</label>
@@ -1305,6 +1336,18 @@
                     limit: Infinity,
                     minLength: 1
                 }
+            });
+
+            //FABs
+            elems = document.querySelectorAll('.click-to-toggle');
+            instances = M.FloatingActionButton.init(elems, {
+                hoverEnabled: false
+            });
+
+            elems = document.querySelectorAll('.toolbar');
+            console.log(elems);
+            instances = M.FloatingActionButton.init(elems, {
+                toolbarEnabled: true,
             });
 
         });
