@@ -15,18 +15,19 @@
     <div class="navbar-fixed">
         <nav>
             <div class="nav-wrapper">
-                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
                 <a href="" class="brand-logo">Logo</a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="sass.html">Sass</a></li>
-                    <li><a href="badges.html">Components</a></li>
+                <ul class="right">
+                    <li><a onclick="M.changeTheme({theme:'red'})">Red</a></li>
+                    <li><a onclick="M.changeTheme({theme:'blue'})">Blue</a></li>
+                    <li><a onclick="M.changeTheme({theme:'orange'})">Orange</a></li>
                 </ul>
             </div>
         </nav>
     </div>
 
     <div class="container">
-        <h1>Navbar</h1>
+        <h1 id="navbar">Navbar</h1>
         <div class='divider'></div>
         <h3>Right Aligned</h3>
         <nav>
@@ -214,7 +215,7 @@
             <li><a href="mobile.html">Mobile</a></li>
         </ul>
 
-        <h1>Badges</h1>
+        <h1 id='badges'>Badges</h1>
         <div class="divider"></div>
 
         <h3>Collections</h3>
@@ -245,7 +246,7 @@
             </div>
         </nav>
 
-        <h1>Buttons</h1>
+        <h1 id='buttons'>Buttons</h1>
         <div class="divider"></div>
 
         <h3>Raised</h3>
@@ -327,7 +328,7 @@
             </div>
         </nav>
 
-        <h1>Cards</h1>
+        <h1 id='cards'>Cards</h1>
         <div class="divider"></div>
 
         <h3>Basic Card</h3>
@@ -544,7 +545,7 @@
             </div>
         </div>
 
-        <h1>Carousel</h1>
+        <h1 id="carousel">Carousel</h1>
         <div class="divider"></div>
 
         <h3>Basic</h3>
@@ -587,7 +588,7 @@
             </div>
         </div>
 
-        <h1>Collapsible</h1>
+        <h1 id="collapsible">Collapsible</h1>
         <div class="divider"></div>
 
         <h3>Accordion</h3>
@@ -638,7 +639,7 @@
             </li>
         </ul>
 
-        <h1>Collections</h1>
+        <h1 id="collections">Collections</h1>
         <div class="divider"></div>
 
         <h3>Basic</h3>
@@ -719,7 +720,7 @@
             </li>
         </ul>
 
-        <h1>Dropdown</h1>
+        <h1 id="dropdown">Dropdown</h1>
         <div class="divider"></div>
         <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Drop Me!</a>
         <ul id='dropdown1' class='dropdown-content'>
@@ -731,7 +732,7 @@
             <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
         </ul>
 
-        <h1>Floating Action Button</h1>
+        <h1 id="floating-action-button">Floating Action Button</h1>
         <div class="divider"></div>
         <p>For aesthetic reasons FABs are not reccomended with futuristic-materialize</p>
 
@@ -749,12 +750,12 @@
             </ul>
         </div>
 
-        <h1>Material Box</h1>
+        <h1 id="material-box">Material Box</h1>
         <div class="divider"></div>
 
         <img class="materialboxed" width="650" src="images/sample-1.jpg">
 
-        <h1>Modals</h1>
+        <h1 id="modals">Modals</h1>
         <div class="divider"></div>
 
         <h3>Basic</h3>
@@ -793,7 +794,7 @@
             </div>
         </div>
 
-        <h1>Pagination</h1>
+        <h1 id="pagination">Pagination</h1>
         <div class="divider"></div>
         <ul class="pagination">
             <li class="disabled"><a href=""><i class="material-icons">chevron_left</i></a></li>
@@ -805,13 +806,13 @@
             <li class="waves-effect"><a href=""><i class="material-icons">chevron_right</i></a></li>
         </ul>
 
-        <h1>Parralax</h1>
+        <h1 id="parallax">Parallax</h1>
         <div class="parallax-container">
             <div class="parallax"><img src="images/parallax1.jpg"></div>
         </div>
 
 
-        <h1>Preloader</h1>
+        <h1 id="parallax">Preloader</h1>
         <div class="divider"></div>
 
         <h3>Linear</h3>
@@ -922,11 +923,11 @@
             </div>
         </div>
 
-        <h1>Toast</h1>
+        <h1 id="toast">Toast</h1>
         <div class=divider></div>
         <a onclick="M.toast({html: 'I am a toast'})" class="btn">Toast!</a>
 
-        <h1>Tooltip</h1>
+        <h1 id="tooltip">Tooltip</h1>
         <div class="divider"></div>
         <a class="btn tooltipped" data-position="bottom" data-tooltip="I am a tooltip">Hover me!</a>
 
@@ -1114,23 +1115,36 @@
     </footer>
 
     <ul id="slide-out" class="sidenav">
-        <li>
-            <div class="user-view">
-                <div class="background">
-                    <img src="images/office.jpg">
-                </div>
-                <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
-                <a href="#name"><span class="white-text name">John Doe</span></a>
-                <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
-            </div>
-        </li>
-        <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-        <li><a href="#!">Second Link</a></li>
+        <li><a href="#navbar" >Navbar</a></li>
+        <li><a href="#badges" >Badges</a></li>
+        <li><a href="#buttons" >Buttons</a></li>
+        <li><a href="#breadcrumbs" >Breadcrumbs</a></li>
+        <li><a href="#cards" >Cards</a></li>
+        <li><a href="#carousel" >Carousel</a></li>
+        <li><a href="#collapsible" >Collapsible</a></li>
+        <li><a href="#collections" >Collections</a></li>
+        <li><a href="#dropdown" >Dropdown</a></li>
+        <li><a href="#floating-action-button" >Floating Action Button</a></li>
+        <li><a href="#material-box" >Material Box</a></li>
+        <li><a href="#modals" >Modals</a></li>
+        <li><a href="#pagination" >Pagination</a></li>
+        <li><a href="#parallax" >Parallax</a></li>
+        <li><a href="#preloader" >Preloader</a></li>
+        <li><a href="#toast" >Toast</a></li>
+        <li><a href="#tooltip" >Tooltip</a></li>
         <li>
             <div class="divider"></div>
         </li>
-        <li><a class="subheader">Subheader</a></li>
-        <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+        <li><a class="subheader">Forms</a></li>
+        <li><a href="#autocomplete" >Autocomplete</a></li>
+        <li><a href="#checkboxes" >Checkboxes</a></li>
+        <li><a href="#chips" >Chips</a></li>
+        <li><a href="#pickers" >Pickers</a></li>
+        <li><a href="#html5-range" >HTML5 Range</a></li>
+        <li><a href="#switches" >Switches</a></li>
+        <li><a href="#text-inputs" >Text Inputs</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="#footer" >Footer</a></li>
     </ul>
 
     <script>
