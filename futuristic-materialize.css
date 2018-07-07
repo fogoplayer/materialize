@@ -2876,7 +2876,7 @@ video.responsive-video {
 }
 
 .pagination li a {
-    color: #444;
+    color: var(--text-color);
     display: inline-block;
     font-size: 1.2rem;
     padding: 0 10px;
@@ -2888,12 +2888,12 @@ video.responsive-video {
 }
 
 .pagination li.active {
-    background-color: #ee6e73;
+    box-shadow: 0 0 0 1px var(--accent-color);
 }
 
 .pagination li.disabled a {
     cursor: default;
-    color: #999;
+    color: rgba(var(--text-rgb),0.2);
 }
 
 .pagination li i {
@@ -3355,7 +3355,7 @@ th {
     height: 4px;
     display: block;
     width: 100%;
-    background-color: #acece6;
+    background-color: var(--darkest-color);
     border-radius: 2px;
     margin: 0.5rem 0 1rem 0;
     overflow: hidden;
@@ -8173,6 +8173,10 @@ input[type=range]::-ms-thumb {
     height: 100%;
     opacity: 0;
     border-color: var(--accent-color);
+}
+
+.spinner-accent-only{
+    border-color:var(--accent-color);
 }
 
 .spinner-blue,
