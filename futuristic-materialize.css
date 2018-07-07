@@ -6351,7 +6351,7 @@ button:focus {
 
 label {
     font-size: 0.8rem;
-    color: #fff;
+    color: var(--text-color);
 }
 
 
@@ -7066,7 +7066,7 @@ textarea.materialize-textarea {
 
 [type="radio"]:not(:checked)+span:before,
 [type="radio"]:not(:checked)+span:after {
-    border: 2px solid #5a5a5a;
+    border: 2px solid rgba(var(--text-rgb),0.2);
 }
 
 [type="radio"]:not(:checked)+span:after {
@@ -7117,12 +7117,12 @@ textarea.materialize-textarea {
 /* Disabled Radio With gap */
 
 [type="radio"].with-gap:disabled:checked+span:before {
-    border: 2px solid rgba(0, 0, 0, 0.42);
+    border: 2px solid rgba(var(--text-rgb), 0.1);
 }
 
 [type="radio"].with-gap:disabled:checked+span:after {
     border: none;
-    background-color: rgba(0, 0, 0, 0.42);
+    background-color: rgba(var(--text-rgb), 0.1);
 }
 
 
@@ -7131,20 +7131,20 @@ textarea.materialize-textarea {
 [type="radio"]:disabled:not(:checked)+span:before,
 [type="radio"]:disabled:checked+span:before {
     background-color: transparent;
-    border-color: rgba(0, 0, 0, 0.42);
+    border-color: rgba(var(--text-rgb), 0.1);
 }
 
 [type="radio"]:disabled+span {
-    color: rgba(0, 0, 0, 0.42);
+    color: rgba(var(--text-rgb), 0.2);
 }
 
 [type="radio"]:disabled:not(:checked)+span:before {
-    border-color: rgba(0, 0, 0, 0.42);
+    border-color: rgba(var(--text-rgb), 0.1);
 }
 
 [type="radio"]:disabled:checked+span:after {
-    background-color: rgba(0, 0, 0, 0.42);
-    border-color: #949494;
+    background-color: rgba(var(--text-rgb), 0.1);
+    border-color: rgba(var(--text-rgb), 0.1);
 }
 
 
@@ -7388,7 +7388,7 @@ textarea.materialize-textarea {
 
 .switch label input[type=checkbox]:checked+.lever:after {
     background-color: var(--darkest-color);
-    border: 1px solid var(--accent-color);
+    border: 2px solid var(--accent-color);
 }
 
 .switch label .lever {
@@ -7428,7 +7428,7 @@ textarea.materialize-textarea {
 
 .switch label .lever:after {
     background-color: var(--darkest-color);
-    border: 1px solid var(--accent-color);
+    border: 2px solid var(--accent-color);
     -webkit-box-shadow: 0px 3px 1px -2px rgba(var(--accent-rgb), 0.2), 0px 2px 2px 0px rgba(var(--accent-rgb), 0.14), 0px 1px 5px 0px rgba(var(--accent-rgb), 0.12);
     box-shadow: 0px 3px 1px -2px rgba(var(--accent-rgb), 0.2), 0px 2px 2px 0px rgba(var(--accent-rgb), 0.14), 0px 1px 5px 0px rgba(var(--accent-rgb), 0.12);
 }
