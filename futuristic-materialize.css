@@ -5516,7 +5516,7 @@ small {
 
 .btn-floating:hover {
     box-shadow: 0 0 0 1.5px var(--accent-color);
-    /*background-color: rgba(var(--accent-rgb), .8);*/
+    background-color: var(--medium-color);
 }
 
 .btn-floating:before {

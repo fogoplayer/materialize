@@ -35,8 +35,5 @@ Futuristic Materialize provides a few unique classes.
 - Add theme creator to site
 - Add left media theme
 - Checkbox labels
-- Orange rgb
-- Tab focus color
-- FAB focus transparency
 - carousel.indicators.indicator-item
 - Anchor links
