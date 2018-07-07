@@ -3290,12 +3290,12 @@ th {
 }
 
 .collection .collection-item.active {
-    background-color: var(--accent-color);
-    color: #eafaf9;
+    background-color: var(--darkest-color);
+    color: var(--text-color);
 }
 
 .collection .collection-item.active .secondary-content {
-    color: #fff;
+    color: var(--text-color);
 }
 
 .collection a.collection-item {
@@ -3306,12 +3306,12 @@ th {
 }
 
 .collection a.collection-item:not(.active):hover {
-    background-color: var(--darkest-color);
+    background-color: rgba(var(--accent-rgb),0.2);
 }
 
 .collection.with-header .collection-header {
-    background-color: #fff;
-    border-bottom: 1px solid #e0e0e0;
+    background-color: var(--medium-color);
+    border-bottom: 1px solid var(--accent-color);
     padding: 10px 20px;
 }
 
@@ -5472,7 +5472,7 @@ small {
 .btn-large:focus,
 .btn-small:focus,
 .btn-floating:focus {
-    box-shadow: 0 0 0 1.5px var(--accent-color);
+    background-color:rgba(var(--accent-rgb),0.2);
 }
 
 .btn,
@@ -5492,7 +5492,7 @@ small {
 .btn:hover,
 .btn-large:hover,
 .btn-small:hover {
-    box-shadow: 0 0 0 1.5px var(--accent-color);
+    background-color:rgba(var(--accent-rgb),0.2);
 }
 
 .btn-floating {
@@ -5738,8 +5738,7 @@ button.btn-floating {
 
 .btn-flat:focus,
 .btn-flat:hover {
-    -webkit-box-shadow: 0 0 0 1.5px var(--accent-color);
-    box-shadow: 0 0 0 1.5px var(--accent-color);
+    background-color:rgba(var(--accent-rgb),0.2);
 }
 
 .btn-flat:focus {
@@ -5807,7 +5806,7 @@ button.btn-floating {
 
 .dropdown-content li:hover,
 .dropdown-content li.active {
-    background-color: var(--darkest-color);
+    background-color: rgba(var(--accent-rgb),0.2)
 }
 
 .dropdown-content li:focus {
@@ -5843,7 +5842,7 @@ button.btn-floating {
 }
 
 body.keyboard-focused .dropdown-content li:focus {
-    background-color: var(--darkest-color);
+    background-color: rgba(var(--accent-rgb),0.2)
 }
 
 .input-field.col .dropdown-content [type="checkbox"]+label {
@@ -6115,7 +6114,7 @@ body.keyboard-focused .dropdown-content li:focus {
 }
 
 .collapsible-header:hover {
-    background-color:var(--darkest-color);
+    background-color:rgba(var(--accent-rgb),0.2);
 }
 
 .collapsible-header i {
@@ -6127,7 +6126,7 @@ body.keyboard-focused .dropdown-content li:focus {
 }
 
 .keyboard-focused .collapsible-header:focus {
-    background-color: var(--darkest-color);
+    background-color: rgba(var(--accent-rgb),0.2)
 }
 
 .collapsible-body {
@@ -6345,8 +6344,7 @@ select:focus {
 }
 
 button:focus {
-    -webkit-box-shadow: 0 0 0 1.5px var(--accent-color);
-    box-shadow: 0 0 0 1.5px var(--accent-color);
+    background-color:rgba(var(--accent-rgb),0.2);
 }
 
 label {
