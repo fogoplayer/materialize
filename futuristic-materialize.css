@@ -4462,7 +4462,7 @@ nav .input-field label {
 }
 
 nav .input-field label i {
-  color: rgba(var(--text-rgb), 0.7);
+  color: var(--text-color);
   -webkit-transition: color .3s;
   transition: color .3s;
 }
@@ -6664,11 +6664,11 @@ textarea.materialize-textarea + label:after, .select-wrapper + label:after {
   color: var(--text-color);
 }
 
-.input-field input[type=search]:focus:not(.browser-default) + label i,
-.input-field input[type=search]:focus:not(.browser-default) ~ .mdi-navigation-close,
-.input-field input[type=search]:focus:not(.browser-default) ~ .material-icons {
-  color: #444;
-}
+/*.input-field input[type=search]:focus:not(.browser-default) + label i,*/
+/*.input-field input[type=search]:focus:not(.browser-default) ~ .mdi-navigation-close,*/
+/*.input-field input[type=search]:focus:not(.browser-default) ~ .material-icons {*/
+/*  color: #444;*/
+/*}*/
 
 .input-field input[type=search] + .label-icon {
   -webkit-transform: none;
