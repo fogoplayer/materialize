@@ -6208,15 +6208,14 @@ body.keyboard-focused .dropdown-content li:focus {
     line-height: 32px;
     padding: 0 12px;
     border-radius: 16px;
-    background-color: var(--accent-color);
+    box-shadow: 0 0 0 1px var(--accent-color);
     margin-bottom: 5px;
     margin-right: 5px;
 }
 
-.chip:focus {
+.chip:focus, .chip:hover{
     outline: none;
-    background-color: var(--accent-color);
-    color: #fff;
+    background-color: rgba(var(--accent-rgb),0.2);
 }
 
 .chip>img {

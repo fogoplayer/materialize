@@ -1018,9 +1018,13 @@
         </div>
 
         <h4>Inputs</h4>
-        <div class="chips no-autoinit"></div>
+        <h5>Basic</h5>
+        <div class="chips"></div>
+        <h5>Initial Values</h5>
         <div class="chips no-autoinit chips-initial"></div>
+        <h5>Placeholder</h5>
         <div class="chips no-autoinit chips-placeholder"></div>
+        <h5>Autocomplete</h5>
         <div class="chips no-autoinit chips-autocomplete"></div>
 
         <h3>Pickers</h3>
@@ -1173,7 +1177,13 @@
 
             //Autocomplete
             let elems = document.querySelectorAll('.autocomplete');
-            let instances = M.Autocomplete.init(elems, {});
+            let instances = M.Autocomplete.init(elems, {
+                data: {
+                    "Apple": null,
+                    "Microsoft": null,
+                    "Google": 'https://placehold.it/250x250'
+                },
+            });
 
             //Chips
             elems = document.querySelectorAll('.chips-initial');
@@ -1191,15 +1201,17 @@
                 placeholder: 'Enter a tag',
                 secondaryPlaceholder: '+Tag',
             });
-            elems = document.querySelectorAll('.chips-autcomplete');
+            elems = document.querySelectorAll('.chips-autocomplete');
             instances = M.Chips.init(elems, {
-                data: {
-                    'Apple': null,
-                    'Microsoft': null,
-                    'Google': null
-                },
-                limit: Infinity,
-                minLength: 1
+                autocompleteOptions: {
+                    data: {
+                        'Apple': null,
+                        'Microsoft': null,
+                        'Google': null
+                    },
+                    limit: Infinity,
+                    minLength: 1
+                }
             });
 
         });
