@@ -9251,7 +9251,7 @@ input[type=range]::-ms-thumb {
 }
 
 .text-primary {
-    color: white;
+    color: var(--accent-color);
 }
 
 
@@ -9262,7 +9262,7 @@ input[type=range]::-ms-thumb {
     -webkit-flex: 1 auto;
     -ms-flex: 1 auto;
     flex: 1 auto;
-    background-color: var(--accent-color);
+    background-color: var(--darkest-color);
     padding: 10px;
     font-weight: 300;
 }
@@ -9271,8 +9271,8 @@ input[type=range]::-ms-thumb {
     font-size: 4rem;
     font-weight: bold;
     text-align: center;
-    color: rgba(255, 255, 255, 0.6);
-    font-weight: 400;
+    color: rgba(var(--accent-rgb), 0.6);
+    font-weight: 300;
     position: relative;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -9313,7 +9313,7 @@ input[type=range]::-ms-thumb {
 }
 
 .timepicker-plate {
-    background-color: #eee;
+    background-color: var(--darkest-color);
     border-radius: 50%;
     width: 270px;
     height: 270px;
@@ -9343,7 +9343,7 @@ input[type=range]::-ms-thumb {
 
 .timepicker-tick {
     border-radius: 50%;
-    color: rgba(0, 0, 0, 0.87);
+    color: rgba(var(--text-rgb), 0.87);
     line-height: 40px;
     text-align: center;
     width: 40px;
