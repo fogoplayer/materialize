@@ -30,13 +30,11 @@ Futuristic Materialize provides a few unique classes.
 
 
 ## todo
-- Make sure all colors are variable-ized
 - Add rgb and color name values to `M.changeTheme()`
 - Add green and test themes, darken orange theme
 - Add theme creator to site
 - Add left media theme
 - Checkbox labels
 - carousel.indicators.indicator-item
-- Anchor links
 - Collapsible expandable init
 - See if plugins really are required for scrollspy, range, and pushpin
