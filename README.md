@@ -15,6 +15,8 @@ While there is a default blue theme, you can change the theme by calling `M.chan
 |background_color|Used for page background              |
 |accent_color    |Used as accents throughout            |
 |text_color      |Used for text                         |
+|invalid_color   |Used for invalid text fields          |
+|valid_color     |Used for valid text fields            |
 
 Currently only hex codes are supported.
 
@@ -29,11 +31,12 @@ Futuristic Materialize provides a few unique classes.
 
 ## todo
 - Make sure all colors are variable-ized
-- Card actions and cards aren't using variables
 - Add rgb and color name values to `M.changeTheme()`
-- Add green and test themes
+- Add green and test themes, darken orange theme
 - Add theme creator to site
 - Add left media theme
 - Checkbox labels
 - carousel.indicators.indicator-item
 - Anchor links
+- Collapsible expandable init
+- See if plugins really are required for scrollspy, range, and pushpin
