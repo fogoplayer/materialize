@@ -1183,13 +1183,17 @@ M.changeTheme = function(config) {
         }
     }
 
-    const generateRGB = function(property) { let propertyVal = config[property]; property = property.split("_")[0]; let r, g, b; /*Bail if it already exists*/ if (config[property + "_rgb"]) { console.log(property, "already has an rgb value"); return; } /*RGB*/ else if (propertyVal.substring(0, 4) === "rgb(") { propertyVal = propertyVal.substring(4, propertyVal.length - 1).split(','); r = propertyVal[0]; g = propertyVal[1]; b = propertyVal[2]; } /*HSL*/ else if (propertyVal.substring(0, 4) === "hsl(") { let h, s, l; propertyVal = propertyVal.substring(4, propertyVal.length - 1).split(','); h = parseInt(propertyVal[0]) / 360; s = parseInt(propertyVal[1]) / 100; l = parseInt(propertyVal[2]) / 100; if (s == 0) { r = g = b = l; /*achromatic*/ } else { function hue2rgb(p, q, t) { if (t < 0) t += 1; if (t > 1) t -= 1; if (t < 1 / 6) return p + (q - p) * 6 * t; if (t < 1 / 2) return q; if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6; return p; } var q = l < 0.5 ? l * (1 + s) : l + s - l * s; var p = 2 * l - q; r = hue2rgb(p, q, h + 1 / 3); g = hue2rgb(p, q, h); b = hue2rgb(p, q, h - 1 / 3); r = r * 255; g = g * 255; b = b * 255; } } /*Hex*/ else if (propertyVal.substring(0, 1) === '#' && propertyVal.length === 7) { r = parseInt(propertyVal.substring(1, 3), 16); g = parseInt(propertyVal.substring(3, 5), 16); b = parseInt(propertyVal.substring(5, 7), 16); } /*Shortened Hex*/ else if (propertyVal.substring(0, 1) === '#' && propertyVal.length === 4) { r = parseInt(propertyVal.substring(1, 2), 16) / 16 * 255; g = parseInt(propertyVal.substring(2, 3), 16) / 16 * 255; b = parseInt(propertyVal.substring(3, 4), 16) / 16 * 255; } /*Default*/ else{ console.error("The color passed to", property, "is not in a supported format"); } document.documentElement.style.setProperty('--' + property + "-rgb", r + ", " + g + ", " + b); }
+    const generateRGB = function(property) { let propertyVal = config[property]; property = property.split("_")[0]; let r, g, b; /*Bail if it already exists*/ if (config[property + "_rgb"]) { console.log(property, "already has an rgb value"); return; } /*RGB*/ else if (propertyVal.substring(0, 4) === "rgb(") { propertyVal = propertyVal.substring(4, propertyVal.length - 1).split(','); r = propertyVal[0]; g = propertyVal[1]; b = propertyVal[2]; } /*HSL*/ else if (propertyVal.substring(0, 4) === "hsl(") { let h, s, l; propertyVal = propertyVal.substring(4, propertyVal.length - 1).split(','); h = parseInt(propertyVal[0]) / 360; s = parseInt(propertyVal[1]) / 100; l = parseInt(propertyVal[2]) / 100; if (s == 0) { r = g = b = l; /*achromatic*/ } else { function hue2rgb(p, q, t) { if (t < 0) t += 1; if (t > 1) t -= 1; if (t < 1 / 6) return p + (q - p) * 6 * t; if (t < 1 / 2) return q; if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6; return p; } var q = l < 0.5 ? l * (1 + s) : l + s - l * s; var p = 2 * l - q; r = hue2rgb(p, q, h + 1 / 3); g = hue2rgb(p, q, h); b = hue2rgb(p, q, h - 1 / 3); r = r * 255; g = g * 255; b = b * 255; } } /*Hex*/ else if (propertyVal.substring(0, 1) === '#' && propertyVal.length === 7) { r = parseInt(propertyVal.substring(1, 3), 16); g = parseInt(propertyVal.substring(3, 5), 16); b = parseInt(propertyVal.substring(5, 7), 16); } /*Shortened Hex*/ else if (propertyVal.substring(0, 1) === '#' && propertyVal.length === 4) { r = parseInt(propertyVal.substring(1, 2), 16) / 16 * 255; g = parseInt(propertyVal.substring(2, 3), 16) / 16 * 255; b = parseInt(propertyVal.substring(3, 4), 16) / 16 * 255; } /*Default*/ else { console.error("The color passed to", property, "is not in a supported format"); return false; } document.documentElement.style.setProperty('--' + property + "-rgb", r + ", " + g + ", " + b); return true; }
 
     //Apply other properties
     for (property in config) {
-        if(property !== "theme"){ generateRGB(property); }
-        const cssProperty = property.replace(/_/, '-');
-        document.documentElement.style.setProperty('--' + cssProperty, config[property]);
+        if(property !== "theme"){
+            if(generateRGB(property)){
+                const cssProperty = property.replace(/_/, '-');
+                document.documentElement.style.setProperty('--' + cssProperty, config[property]);
+            }
+        }
+        
     }
 }
 
