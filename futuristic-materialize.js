@@ -1181,6 +1181,14 @@ M.changeTheme = function(config) {
             case "green":
                 config.accent_color = '#32CD32';
                 break;
+                
+            case "test":
+                config.darkest_color = "#FFF"
+                config.medium_color = "#999"
+                config.background_color = "#555"
+                config.accent_color = "#F0F"
+                config.text_color = "#000"
+                break;
 
             default:
                 console.error("Theme is not supported");
