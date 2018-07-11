@@ -6,14 +6,19 @@
 
 :root {
     --darkest-color: #000000;
+    --darkest-rgb:0,0,0;
     --medium-color: #222222;
+    --medium-rgb:34,34,34;
     --background-color: #333333;
+    --background-rgb:51,51,51;
     --accent-color: #0892D0;
     --accent-rgb: 8, 146, 208;
     --text-color: #ffffff;
     --text-rgb: 255, 255, 255;
     --valid-color:#4CAF50;
+    --valid-rgb:76,175,80;
     --invalid-color:#F44336;
+    --invalid-rgb:244, 67, 54;
 }
 
 .materialize-red {
