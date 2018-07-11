@@ -622,7 +622,7 @@
         </ul>
 
         <h3>Expandable</h3>
-        <ul class="collapsible expandable">
+        <ul class="collapsible expandable no-autoinit">
             <li>
                 <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
                 <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
@@ -1015,7 +1015,7 @@
                 </tr>
             </tbody>
         </table>
-        
+
         <h3>Striped Table</h3>
         <table class="striped">
             <thead>
@@ -1044,7 +1044,7 @@
                 </tr>
             </tbody>
         </table>
-        
+
         <h3>Highlight Table</h3>
         <table class="highlight">
             <thead>
@@ -1073,7 +1073,7 @@
                 </tr>
             </tbody>
         </table>
-        
+
         <h3>Center Table</h3>
         <table class="centered">
             <thead>
@@ -1102,7 +1102,7 @@
                 </tr>
             </tbody>
         </table>
-        
+
         <h3>Responsive Table</h3>
         <table class="responsive-table">
             <thead>
@@ -1139,18 +1139,18 @@
         <h1 id="tooltip">Tooltip</h1>
         <div class="divider"></div>
         <a class="btn tooltipped" data-position="bottom" data-tooltip="I am a tooltip">Hover me!</a>
-        
+
         <h1 id="typography">Typography</h1>
         <div class=divider></div>
-        
+
         <h3>Blockquotes</h3>
         <blockquote>
             This is an example quotation that uses the blockquote tag.
         </blockquote>
-        
+
         <h3>Flow Text</h3>
         <p class="flow-text">I am Flow Text</p>
-        
+
 
         <h1 id="forms">Forms</h1>
         <div class="divider"></div>
@@ -1543,6 +1543,12 @@
                     limit: Infinity,
                     minLength: 1
                 }
+            });
+
+            //Collapsibles
+            elem = document.querySelector('.collapsible.expandable');
+            M.Collapsible.init(elem, {
+                accordion: false
             });
 
             //Dropdowns
