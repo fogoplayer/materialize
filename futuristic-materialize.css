@@ -3137,7 +3137,7 @@ table.striped tr {
 }
 
 table.striped>tbody>tr:nth-child(odd) {
-    background-color: rgba(var(--text-rgb), 0.3);
+    background-color: var(--darkest-color);
 }
 
 table.striped>tbody>tr>td {
@@ -3150,7 +3150,7 @@ table.highlight>tbody>tr {
 }
 
 table.highlight>tbody>tr:hover {
-    background-color: rgba(var(--text-rgb), 0.3);
+    background-color: rgba(var(--accent-rgb), 0.2);
 }
 
 table.centered thead tr th,
