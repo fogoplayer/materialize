@@ -1177,6 +1177,10 @@ M.changeTheme = function(config) {
             case "orange":
                 config.accent_color = '#FF8300';
                 break;
+                
+            case "green":
+                config.accent_color = '#32CD32';
+                break;
 
             default:
                 console.error("Theme is not supported");

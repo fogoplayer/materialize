@@ -21,7 +21,7 @@ While there is a default blue theme, you can change the theme by calling `M.chan
 Hex, RGB, and HSL color formats are supported
 
 ### Themes
-The configuration object can also take a `theme` property. Futuristic Materialize includes 3 built-in themes: `"blue"`, `"red"`, and `"orange"`. The theme is evaluated before the other properties, so themes can be customized by providing other properties.
+The configuration object can also take a `theme` property. Futuristic Materialize includes 4 built-in themes: `"blue"`, `"red"`, `"green"` and `"orange"`. The theme is evaluated before the other properties, so themes can be tweaked by combining a theme delcaration with additional customizations.
 
 ## Custom classes
 Futuristic Materialize provides a few unique classes.
