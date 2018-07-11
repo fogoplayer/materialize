@@ -31,14 +31,14 @@
         <li><a onclick="M.Dropdown.getInstance(document.getElementById('theme-dropdown')).close();M.changeTheme({theme:'green'})">Green</a></li>
         <li><a onclick="M.Dropdown.getInstance(document.getElementById('theme-dropdown')).close();M.changeTheme({theme:'orange'})">Orange</a></li>
         <div class="divider"></div>
-        <li><a style="color:var(--text-color)"><strong>Create Custom Theme</strong></a></li>
-        <li><a>Darkest color: <input id="darkest-color" type="text" onblur="document.documentElement.style.setProperty('--'+this.id, this.value)" style="width:75px; margin:0px; float: right;height:auto"></a></li>
-        <li><a>Medium color: <input id="medium-color" type="text" onblur="document.documentElement.style.setProperty('--'+this.id, this.value)" style="width:75px; margin:0px; float: right;height:auto"></a></li>
-        <li><a>Background color: <input id="background-color" type="text" onblur="document.documentElement.style.setProperty('--'+this.id, this.value)" style="width:75px; margin:0px; float: right;height:auto"></a></li>
-        <li><a>Accent color: <input id="accent-color" type="text" onblur="document.documentElement.style.setProperty('--'+this.id, this.value)" style="width:75px; margin:0px; float: right;height:auto"></a></li>
-        <li><a>Text color: <input id="text-color" type="text" onblur="document.documentElement.style.setProperty('--'+this.id, this.value)" style="width:75px; margin:0px; float: right;height:auto"></a></li>
-        <li><a>Valid color: <input id="valid-color" type="text" onblur="document.documentElement.style.setProperty('--'+this.id, this.value)" style="width:75px; margin:0px; float: right;height:auto"></a></li>
-        <li><a>Invalid color: <input id="invalid-color" type="text" onblur="document.documentElement.style.setProperty('--'+this.id, this.value)" style="width:75px; margin:0px; float: right;height:auto"></a></li>
+        <li><a style="color:var(--text_)"><strong>Create Custom Theme</strong></a></li>
+        <li><a>Darkest color: <input id="darkest_color" type="text" onblur="M.changeTheme({[this.id]: this.value})" style="width:75px; margin:0px; float: right;height:auto"></a></li>
+        <li><a>Medium color: <input id="medium_color" type="text" onblur="M.changeTheme({[this.id]: this.value})" style="width:75px; margin:0px; float: right;height:auto"></a></li>
+        <li><a>Background color: <input id="background_color" type="text" onblur="M.changeTheme({[this.id]: this.value})" style="width:75px; margin:0px; float: right;height:auto"></a></li>
+        <li><a>Accent color: <input id="accent_color" type="text" onblur="M.changeTheme({[this.id]: this.value})" style="width:75px; margin:0px; float: right;height:auto"></a></li>
+        <li><a>Text color: <input id="text_color" type="text" onblur="M.changeTheme({[this.id]: this.value})" style="width:75px; margin:0px; float: right;height:auto"></a></li>
+        <li><a>Valid color: <input id="valid_color" type="text" onblur="M.changeTheme({[this.id]: this.value})" style="width:75px; margin:0px; float: right;height:auto"></a></li>
+        <li><a>Invalid color: <input id="invalid_color" type="text" onblur="M.changeTheme({[this.id]: this.value})" style="width:75px; margin:0px; float: right;height:auto"></a></li>
         <div class="divider"></div>
         <li><a href="https://github.com/fogoplayer/materialize/blob/futuristic-materialize/README.md" target="_blank" style="color:var(--text-color)">Learn more about theming</a></li>
     </ul>
