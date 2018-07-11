@@ -18,14 +18,18 @@
                 <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
                 <a href="" class="brand-logo left">Logo</a>
                 <ul class="right">
-                    <li><a onclick="M.changeTheme({theme:'red'})">Red</a></li>
-                    <li><a onclick="M.changeTheme({theme:'blue'})">Blue</a></li>
-                    <li><a onclick="M.changeTheme({theme:'green'})">Green</a></li>
-                    <li><a onclick="M.changeTheme({theme:'orange'})">Orange</a></li>
+                    <li><a id='theme-dropdown'class="dropdown-trigger" href="#!" data-target="dropdown1">Change Theme<i class="material-icons right">arrow_drop_down</i></a></li>
                 </ul>
             </div>
         </nav>
     </div>
+
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a onclick="M.Dropdown.getInstance(document.getElementById('theme-dropdown')).close();M.changeTheme({theme:'red'})">Red</a></li>
+        <li><a onclick="M.Dropdown.getInstance(document.getElementById('theme-dropdown')).close();M.changeTheme({theme:'blue'})">Blue</a></li>
+        <li><a onclick="M.Dropdown.getInstance(document.getElementById('theme-dropdown')).close();M.changeTheme({theme:'green'})">Green</a></li>
+        <li><a onclick="M.Dropdown.getInstance(document.getElementById('theme-dropdown')).close();M.changeTheme({theme:'orange'})">Orange</a></li>
+    </ul>
 
     <div class="container">
         <h1 id="navbar">Navbar</h1>
@@ -1296,7 +1300,7 @@
             <div class="divider"></div>
         </li>
         <li><a href="#forms" class="subheader">Forms</a></li>
-        
+
         <li><a href="#autocomplete">Autocomplete</a></li>
         <li><a href="#checkboxes">Checkboxes</a></li>
         <li><a href="#chips">Chips</a></li>
@@ -1365,6 +1369,15 @@
                     limit: Infinity,
                     minLength: 1
                 }
+            });
+
+            //Dropdowns
+            elems = document.querySelectorAll('.dropdown-trigger');
+            instances = M.Dropdown.init(elems, {
+                alignment:'right',
+                constrainWidth:false,
+                coverTrigger:false,
+                closeOnClick:false,
             });
 
             //FABs
