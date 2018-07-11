@@ -4525,6 +4525,9 @@ nav .brand-logo.center {
     nav .brand-logo.left {
         left: 0.5rem;
     }
+    nav .sidenav-trigger~.brand-logo.left {
+        left: unset;
+    }
     nav .brand-logo.right {
         right: 0.5rem;
         left: auto;

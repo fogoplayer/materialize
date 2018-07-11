@@ -18,23 +18,20 @@ While there is a default blue theme, you can change the theme by calling `M.chan
 |invalid_color   |Used for invalid text fields          |
 |valid_color     |Used for valid text fields            |
 
-Currently only hex codes are supported.
+Hex, RGB, and HSL color formats are supported
 
 ### Themes
-The configuration object can also take a `theme` property. Futuristic Materialize` includes 3 built-in themes: `"blue"`, `"red"`, and `"orange"`. The theme is evaluated before the other properties, so themes can be customized by providing other properties.
+The configuration object can also take a `theme` property. Futuristic Materialize includes 3 built-in themes: `"blue"`, `"red"`, and `"orange"`. The theme is evaluated before the other properties, so themes can be customized by providing other properties.
 
 ## Custom classes
 Futuristic Materialize provides a few unique classes.
 
-`.spinner-accent-only` can be applied to a spinner to make it use the accent color.
+- `.spinner-accent-only` can be applied to a spinner to make it use the accent color.
+- When using the `left` class on a brand-logo, if it has a `.sidenav-trigger` as a preceding sibling, they won't overlap each other.
 
 
 ## todo
-- Add rgb and color name values to `M.changeTheme()`
 - Add green and test themes, darken orange theme
 - Add theme creator to site
-- Add left media theme
-- Checkbox labels
-- carousel.indicators.indicator-item
 - Collapsible expandable init
 - See if plugins really are required for scrollspy, range, and pushpin
