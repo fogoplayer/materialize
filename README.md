@@ -31,7 +31,7 @@ Futuristic Materialize provides a few unique classes.
 
 
 ## todo
-- Add green and test themes, darken orange theme
+- Add green and test themes
 - Add theme creator to site
 - Collapsible expandable init
 - See if plugins really are required for scrollspy, range, and pushpin
