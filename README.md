@@ -31,7 +31,6 @@ Futuristic Materialize provides a few unique classes.
 
 
 ## todo
-- Add theme creator to site
 - Collapsible expandable init
 - Time picker z-index
 - Input label left property
