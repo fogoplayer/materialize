@@ -13,20 +13,6 @@
 
 <body>
     <div class="navbar-fixed">
-        <ul id="dropdown1" class="dropdown-content" style="position:fixed">
-            <li><a onclick="M.Dropdown.getInstance(document.getElementById('theme-dropdown')).close();M.changeTheme({theme:'red'})">Red</a></li>
-            <li><a onclick="M.Dropdown.getInstance(document.getElementById('theme-dropdown')).close();M.changeTheme({theme:'blue'})">Blue</a></li>
-            <li><a onclick="M.Dropdown.getInstance(document.getElementById('theme-dropdown')).close();M.changeTheme({theme:'green'})">Green</a></li>
-            <li><a onclick="M.Dropdown.getInstance(document.getElementById('theme-dropdown')).close();M.changeTheme({theme:'orange'})">Orange</a></li>
-            <div class="divider"></div>
-            <li><a>Darkest color: <input id="darkest-color" type="text" onblur="document.documentElement.style.setProperty('--'+this.id, this.value)" style="width:75px; margin:0px; float: right;height:auto"></a></li>
-            <li><a>Medium color: <input id="medium-color" type="text" onblur="document.documentElement.style.setProperty('--'+this.id, this.value)" style="width:75px; margin:0px; float: right;height:auto"></a></li>
-            <li><a>Background color: <input id="background-color" type="text" onblur="document.documentElement.style.setProperty('--'+this.id, this.value)" style="width:75px; margin:0px; float: right;height:auto"></a></li>
-            <li><a>Accent color: <input id="accent-color" type="text" onblur="document.documentElement.style.setProperty('--'+this.id, this.value)" style="width:75px; margin:0px; float: right;height:auto"></a></li>
-            <li><a>Text color: <input id="text-color" type="text" onblur="document.documentElement.style.setProperty('--'+this.id, this.value)" style="width:75px; margin:0px; float: right;height:auto"></a></li>
-            <li><a>Valid color: <input id="valid-color" type="text" onblur="document.documentElement.style.setProperty('--'+this.id, this.value)" style="width:75px; margin:0px; float: right;height:auto"></a></li>
-            <li><a>Invalid color: <input id="invalid-color" type="text" onblur="document.documentElement.style.setProperty('--'+this.id, this.value)" style="width:75px; margin:0px; float: right;height:auto"></a></li>
-        </ul>
         <nav>
             <div class="nav-wrapper">
                 <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
@@ -37,6 +23,21 @@
             </div>
         </nav>
     </div>
+    
+    <ul id="dropdown1" class="dropdown-content" style="position:fixed">
+        <li><a onclick="M.Dropdown.getInstance(document.getElementById('theme-dropdown')).close();M.changeTheme({theme:'red'})">Red</a></li>
+        <li><a onclick="M.Dropdown.getInstance(document.getElementById('theme-dropdown')).close();M.changeTheme({theme:'blue'})">Blue</a></li>
+        <li><a onclick="M.Dropdown.getInstance(document.getElementById('theme-dropdown')).close();M.changeTheme({theme:'green'})">Green</a></li>
+        <li><a onclick="M.Dropdown.getInstance(document.getElementById('theme-dropdown')).close();M.changeTheme({theme:'orange'})">Orange</a></li>
+        <div class="divider"></div>
+        <li><a>Darkest color: <input id="darkest-color" type="text" onblur="document.documentElement.style.setProperty('--'+this.id, this.value)" style="width:75px; margin:0px; float: right;height:auto"></a></li>
+        <li><a>Medium color: <input id="medium-color" type="text" onblur="document.documentElement.style.setProperty('--'+this.id, this.value)" style="width:75px; margin:0px; float: right;height:auto"></a></li>
+        <li><a>Background color: <input id="background-color" type="text" onblur="document.documentElement.style.setProperty('--'+this.id, this.value)" style="width:75px; margin:0px; float: right;height:auto"></a></li>
+        <li><a>Accent color: <input id="accent-color" type="text" onblur="document.documentElement.style.setProperty('--'+this.id, this.value)" style="width:75px; margin:0px; float: right;height:auto"></a></li>
+        <li><a>Text color: <input id="text-color" type="text" onblur="document.documentElement.style.setProperty('--'+this.id, this.value)" style="width:75px; margin:0px; float: right;height:auto"></a></li>
+        <li><a>Valid color: <input id="valid-color" type="text" onblur="document.documentElement.style.setProperty('--'+this.id, this.value)" style="width:75px; margin:0px; float: right;height:auto"></a></li>
+        <li><a>Invalid color: <input id="invalid-color" type="text" onblur="document.documentElement.style.setProperty('--'+this.id, this.value)" style="width:75px; margin:0px; float: right;height:auto"></a></li>
+    </ul>
 
     <div class="container">
         <h1 id="navbar">Navbar</h1>
