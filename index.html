@@ -1498,7 +1498,7 @@
 
             //Autocomplete
             let elems = document.querySelectorAll('.autocomplete');
-            let instances = M.Autocomplete.init(elems, {
+            M.Autocomplete.init(elems, {
                 data: {
                     "Apple": null,
                     "Microsoft": null,
@@ -1518,7 +1518,7 @@
 
             //Chips
             elems = document.querySelectorAll('.chips-initial');
-            instances = M.Chips.init(elems, {
+            M.Chips.init(elems, {
                 data: [{
                     tag: 'Apple',
                 }, {
@@ -1528,12 +1528,12 @@
                 }],
             });
             elems = document.querySelectorAll('.chips-placeholder');
-            instances = M.Chips.init(elems, {
+            M.Chips.init(elems, {
                 placeholder: 'Enter a tag',
                 secondaryPlaceholder: '+Tag',
             });
             elems = document.querySelectorAll('.chips-autocomplete');
-            instances = M.Chips.init(elems, {
+            M.Chips.init(elems, {
                 autocompleteOptions: {
                     data: {
                         'Apple': null,
@@ -1553,7 +1553,7 @@
 
             //Dropdowns
             elems = document.querySelectorAll('.dropdown-trigger');
-            instances = M.Dropdown.init(elems, {
+            M.Dropdown.init(elems, {
                 alignment: 'right',
                 constrainWidth: false,
                 coverTrigger: false,
@@ -1562,13 +1562,12 @@
 
             //FABs
             elems = document.querySelectorAll('.click-to-toggle');
-            instances = M.FloatingActionButton.init(elems, {
+            M.FloatingActionButton.init(elems, {
                 hoverEnabled: false
             });
 
             elems = document.querySelectorAll('.toolbar');
-            console.log(elems);
-            instances = M.FloatingActionButton.init(elems, {
+            M.FloatingActionButton.init(elems, {
                 toolbarEnabled: true,
             });
 
