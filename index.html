@@ -32,17 +32,15 @@
         <li><a onclick="M.Dropdown.getInstance(document.getElementById('theme-dropdown')).close();M.changeTheme({theme:'orange'})">Orange</a></li>
         <div class="divider"></div>
         <li><a style="color:var(--text_)"><strong>Create Custom Theme</strong></a></li>
-        <li><a>Darkest color: <input id="darkest_color" type="text" onblur="M.changeTheme({[this.id]: this.value})" style="width:75px; margin:0px; float: right;height:auto"></a></li>
-        <li><a>Medium color: <input id="medium_color" type="text" onblur="M.changeTheme({[this.id]: this.value})" style="width:75px; margin:0px; float: right;height:auto"></a></li>
-        <li><a>Background color: <input id="background_color" type="text" onblur="M.changeTheme({[this.id]: this.value})" style="width:75px; margin:0px; float: right;height:auto"></a></li>
-        <li><a>Accent color: <input id="accent_color" type="text" onblur="M.changeTheme({[this.id]: this.value})" style="width:75px; margin:0px; float: right;height:auto"></a></li>
-        <li><a>Text color: <input id="text_color" type="text" onblur="M.changeTheme({[this.id]: this.value})" style="width:75px; margin:0px; float: right;height:auto"></a></li>
-        <li><a>Valid color: <input id="valid_color" type="text" onblur="M.changeTheme({[this.id]: this.value})" style="width:75px; margin:0px; float: right;height:auto"></a></li>
-        <li><a>Invalid color: <input id="invalid_color" type="text" onblur="M.changeTheme({[this.id]: this.value})" style="width:75px; margin:0px; float: right;height:auto"></a></li>
+        <li><a>Darkest color: <input placeholder="#000000" id="darkest_color" type="text" onblur="M.changeTheme({[this.id]: this.value})" style="width:75px; margin:0px; float: right;height:auto"></a></li>
+        <li><a>Medium color: <input placeholder="#222222" id="medium_color" type="text" onblur="M.changeTheme({[this.id]: this.value})" style="width:75px; margin:0px; float: right;height:auto"></a></li>
+        <li><a>Background color: <input placeholder="#333333" id="background_color" type="text" onblur="M.changeTheme({[this.id]: this.value})" style="width:75px; margin:0px; float: right;height:auto"></a></li>
+        <li><a>Accent color: <input placeholder="#0892D0" id="accent_color" type="text" onblur="M.changeTheme({[this.id]: this.value})" style="width:75px; margin:0px; float: right;height:auto"></a></li>
+        <li><a>Text color: <input placeholder="#ffffff" id="text_color" type="text" onblur="M.changeTheme({[this.id]: this.value})" style="width:75px; margin:0px; float: right;height:auto"></a></li>
+        <li><a>Valid color: <input placeholder="#4CAF50" id="valid_color" type="text" onblur="M.changeTheme({[this.id]: this.value})" style="width:75px; margin:0px; float: right;height:auto"></a></li>
+        <li><a>Invalid color: <input placeholder="#F44336" id="invalid_color" type="text" onblur="M.changeTheme({[this.id]: this.value})" style="width:75px; margin:0px; float: right;height:auto"></a></li>
         <div class="divider"></div>
-        <li><a href="https://github.com/fogoplayer/materialize/blob/futuristic-materialize/README.md" target="_blank" ><i class="material-icons">
-info
-</Learn more about theming</a></li>
+        <li><a href="https://github.com/fogoplayer/materialize/blob/futuristic-materialize/README.md" target="_blank"><i class="material-icons"> info</i>Learn more about theming</a></li>
     </ul>
 
     <div class="container">
@@ -827,6 +825,7 @@ info
             </div>
         </div>
 
+
         <h1 id="material-box">Material Box</h1>
         <div class="divider"></div>
 
@@ -1171,7 +1170,7 @@ info
 
         <h1 id="table-of-contents">Table of Contents</h1>
         <div class="divider"></div>
-        
+
         <p>This table of contents is designed to be used in combination with <a href="https://materializecss.com/scrollspy.html" target="_blank">scrollspy</a>.</p>
         <ul class="section table-of-contents">
             <li><a class="active">Active item</a></li>
