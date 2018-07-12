@@ -14,9 +14,9 @@ Get the files from jsDelivr:
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fogoplayer/materialize@1.0.0/noUISlider/nouislider.min.css">
 ```
 
-Download the source files from GitHub:  return
-[.zip](https://github.com/fogoplayer/materialize/archive/1.0.0.zip)  return
-[.tar.gz](https://github.com/fogoplayer/materialize/archive/1.0.0.tar.gz)  return
+Download the source files from GitHub:  
+[.zip](https://github.com/fogoplayer/materialize/archive/1.0.0.zip)  
+[.tar.gz](https://github.com/fogoplayer/materialize/archive/1.0.0.tar.gz)
 
 View the [example components](fogoplayer.github.io/materialize).
 
