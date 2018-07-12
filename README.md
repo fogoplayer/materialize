@@ -1,10 +1,26 @@
 # futuristic-materialize
-It's material design, but cooler.
+It's Material Design, but cooler.
 
 A fork of MaterializeCSS (materializecss.com)
 
-## Customization
+## Get started
+Get the files from jsDelivr:
+```html
+<!--Futuristic Materialize-->
+<script src="https://cdn.jsdelivr.net/gh/fogoplayer/materialize@1.0.1/futuristic-materialize.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fogoplayer/materialize@1.0.1/futuristic-materialize.min.css">
+<!--noUISlider (Only needed if using the noUISlider range selector)-->
+<script src="https://cdn.jsdelivr.net/gh/fogoplayer/materialize@1.0.1/noUISlider/nouislider.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fogoplayer/materialize@1.0.1/noUISlider/nouislider.min.css">
+```
 
+Download the source files from GitHub:  
+[.zip](https://github.com/fogoplayer/materialize/archive/1.0.1.zip)  
+[.tar.gz](https://github.com/fogoplayer/materialize/archive/1.0.1.tar.gz)
+
+View the [example components](https://fogoplayer.github.io/materialize).
+
+## Customization
 Futuristic Materialize uses the same html structure as MaterializeCSS. See MaterializeCSS.com for element templates.
 While there is a default blue theme, you can change the theme by calling `M.changeTheme()`, which takes one argument, a configuration object. The properties of that object correspond to the CSS variables used by Futuristic Materialize:
 
@@ -28,8 +44,3 @@ Futuristic Materialize provides a few unique classes.
 
 - `.spinner-accent-only` can be applied to a spinner to make it use the accent color.
 - When using the `left` class on a brand-logo, if it has a `.sidenav-trigger` as a preceding sibling, they won't overlap each other.
-
-
-## todo
-- See if plugins really are required for scrollspy, and pushpin
-- Add FeatureDiscovery
