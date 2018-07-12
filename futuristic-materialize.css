@@ -6,14 +6,19 @@
 
 :root {
     --darkest-color: #000000;
+    --darkest-rgb:0,0,0;
     --medium-color: #222222;
+    --medium-rgb:34,34,34;
     --background-color: #333333;
+    --background-rgb:51,51,51;
     --accent-color: #0892D0;
     --accent-rgb: 8, 146, 208;
     --text-color: #ffffff;
     --text-rgb: 255, 255, 255;
     --valid-color:#4CAF50;
+    --valid-rgb:76,175,80;
     --invalid-color:#F44336;
+    --invalid-rgb:244, 67, 54;
 }
 
 .materialize-red {
@@ -2830,7 +2835,7 @@ nav,
 blockquote {
     margin: 20px 0;
     padding-left: 1.5rem;
-    border-left: 5px solid #ee6e73;
+    border-left: 5px solid var(--accent-color);
 }
 
 i {
@@ -3137,7 +3142,7 @@ table.striped tr {
 }
 
 table.striped>tbody>tr:nth-child(odd) {
-    background-color: rgba(var(--text-rgb), 0.3);
+    background-color: var(--darkest-color);
 }
 
 table.striped>tbody>tr>td {
@@ -3150,7 +3155,7 @@ table.highlight>tbody>tr {
 }
 
 table.highlight>tbody>tr:hover {
-    background-color: rgba(var(--text-rgb), 0.3);
+    background-color: rgba(var(--accent-rgb), 0.2);
 }
 
 table.centered thead tr th,
@@ -6778,7 +6783,6 @@ textarea.materialize-textarea+label:after,
     color: var(--text-color);
     position: absolute;
     top: 0;
-    left: 0.75rem;
     font-size: 1rem;
     cursor: text;
     -webkit-transition: color .2s ease-out, -webkit-transform .2s ease-out;
@@ -7787,9 +7791,9 @@ input[type=range]::-ms-thumb {
 }
 
 .table-of-contents a:hover {
-    color: rgba(var(--accent-rgb),0.2);
+    color: rgba(var(--accent-rgb),0.8);
     padding-left: 15px;
-    border-left: 1px solid rgba(var(--accent-rgb),0.2);
+    border-left: 1px solid rgba(var(--accent-rgb),0.8);
 }
 
 .table-of-contents a.active {
@@ -9270,6 +9274,8 @@ input[type=range]::-ms-thumb {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    box-shadow:0 0 38px 3px rgba(var(--accent-rgb), 0.14), 0 0px 46px 8px rgba(var(--accent-rgb), 0.12), 0 0px 15px -7px rgba(var(--accent-rgb), 0.2);
+    -webkit-box-shadow: 0 0 38px 3px rgba(var(--accent-rgb), 0.14), 0 0px 46px 8px rgba(var(--accent-rgb), 0.12), 0 0px 15px -7px rgba(var(--accent-rgb), 0.2);
 }
 
 .timepicker-canvas,

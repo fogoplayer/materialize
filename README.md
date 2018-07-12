@@ -31,6 +31,5 @@ Futuristic Materialize provides a few unique classes.
 
 
 ## todo
-- Add theme creator to site
-- Collapsible expandable init
-- See if plugins really are required for scrollspy, range, and pushpin
+- See if plugins really are required for scrollspy, and pushpin
+- Add FeatureDiscovery
