@@ -6804,6 +6804,10 @@ textarea.materialize-textarea+label:after,
     transform-origin: 0 0;
 }
 
+.input-field>input:placeholder-shown:not(:focus)+label.active {
+    color: var(--text-color);
+}
+
 .input-field>input[type]:-webkit-autofill:not(.browser-default)+label,
 .input-field>input[type=date]:not(.browser-default)+label,
 .input-field>input[type=time]:not(.browser-default)+label {
