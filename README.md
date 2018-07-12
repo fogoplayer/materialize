@@ -18,7 +18,7 @@ Download the source files from GitHub:
 [.zip](https://github.com/fogoplayer/materialize/archive/1.0.0.zip)  
 [.tar.gz](https://github.com/fogoplayer/materialize/archive/1.0.0.tar.gz)
 
-View the [example components](fogoplayer.github.io/materialize).
+View the [example components](https://fogoplayer.github.io/materialize).
 
 ## Customization
 Futuristic Materialize uses the same html structure as MaterializeCSS. See MaterializeCSS.com for element templates.
