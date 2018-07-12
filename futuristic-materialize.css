@@ -7791,9 +7791,9 @@ input[type=range]::-ms-thumb {
 }
 
 .table-of-contents a:hover {
-    color: rgba(var(--accent-rgb),0.2);
+    color: rgba(var(--accent-rgb),0.8);
     padding-left: 15px;
-    border-left: 1px solid rgba(var(--accent-rgb),0.2);
+    border-left: 1px solid rgba(var(--accent-rgb),0.8);
 }
 
 .table-of-contents a.active {
