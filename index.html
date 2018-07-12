@@ -17,14 +17,14 @@
             <div class="nav-wrapper">
                 <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
                 <a href="" class="brand-logo left">Logo</a>
-                <ul class="right" style="width:250px; max-width:60%">
+                <ul class="right" style="width:275px; max-width:60%">
                     <li style="width:100%"><a id='theme-dropdown' class="dropdown-trigger" href="#!" data-target="dropdown1">Change Theme<i class="material-icons right">arrow_drop_down</i></a></li>
                 </ul>
             </div>
         </nav>
     </div>
 
-    <ul id="dropdown1" class="dropdown-content" style="position:fixed;min-width:250px">
+    <ul id="dropdown1" class="dropdown-content" style="position:fixed;min-width:275px">
         <li><a style="color:var(--text-color)"><strong>Built-in Themes</strong></a></li>
         <li><a onclick="M.Dropdown.getInstance(document.getElementById('theme-dropdown')).close();M.changeTheme({theme:'red'})">Red</a></li>
         <li><a onclick="M.Dropdown.getInstance(document.getElementById('theme-dropdown')).close();M.changeTheme({theme:'blue'})">Blue</a></li>
@@ -40,7 +40,9 @@
         <li><a>Valid color: <input id="valid_color" type="text" onblur="M.changeTheme({[this.id]: this.value})" style="width:75px; margin:0px; float: right;height:auto"></a></li>
         <li><a>Invalid color: <input id="invalid_color" type="text" onblur="M.changeTheme({[this.id]: this.value})" style="width:75px; margin:0px; float: right;height:auto"></a></li>
         <div class="divider"></div>
-        <li><a href="https://github.com/fogoplayer/materialize/blob/futuristic-materialize/README.md" target="_blank" style="color:var(--text-color)">Learn more about theming</a></li>
+        <li><a href="https://github.com/fogoplayer/materialize/blob/futuristic-materialize/README.md" target="_blank" ><i class="material-icons">
+info
+</Learn more about theming</a></li>
     </ul>
 
     <div class="container">
