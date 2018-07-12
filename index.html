@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
     <title>Futuristic Materialize-Demo</title>
     <link href="futuristic-materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="noUISlider/nouislider.css" type="text/css" rel="stylesheet" />
     <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="futuristic-materialize.js"></script>
-    <!--<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>-->
-
+    <script src="noUISlider/nouislider.js"></script>
 </head>
 
 <body>
@@ -577,10 +577,30 @@
         <h3>Media slider</h3>
         <div class="slider">
             <ul class="slides">
-                <li><img src="https://lorempixel.com/580/250/nature/1" /><div class="caption center-align"> <h3>This is our big Tagline!</h3> <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5> </div> </li>
-                <li> <img src="https://lorempixel.com/580/250/nature/2" /><div class="caption left-align"> <h3>Left Aligned Caption</h3> <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5> </div> </li>
-                <li> <img src="https://lorempixel.com/580/250/nature/3" /><div class="caption right-align"> <h3>Right Aligned Caption</h3> <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5> </div> </li>
-                <li> <img src="https://lorempixel.com/580/250/nature/4" /><div class="caption center-align"> <h3>This is our big Tagline!</h3> <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5> </div> </li>
+                <li><img src="https://lorempixel.com/580/250/nature/1" />
+                    <div class="caption center-align">
+                        <h3>This is our big Tagline!</h3>
+                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    </div>
+                </li>
+                <li> <img src="https://lorempixel.com/580/250/nature/2" />
+                    <div class="caption left-align">
+                        <h3>Left Aligned Caption</h3>
+                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    </div>
+                </li>
+                <li> <img src="https://lorempixel.com/580/250/nature/3" />
+                    <div class="caption right-align">
+                        <h3>Right Aligned Caption</h3>
+                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    </div>
+                </li>
+                <li> <img src="https://lorempixel.com/580/250/nature/4" />
+                    <div class="caption center-align">
+                        <h3>This is our big Tagline!</h3>
+                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    </div>
+                </li>
             </ul>
         </div>
 
@@ -1274,11 +1294,16 @@
         <input type="text" class="timepicker">
 
         <h3 id="html5-range">HTML5 Range</h3>
+        <h4>Basic</h4>
         <form action="#">
             <p class="range-field">
                 <input type="range" id="test5" min="0" max="100" />
             </p>
         </form>
+
+        <!--<h4>noUISlider</h4>-->
+        <!--<div id="test-slider"></div>-->
+
 
         <h3 id="radio-buttons">Radio Buttons</h3>
         <form action="#">
@@ -1526,7 +1551,7 @@
             M.Carousel.init(elems, {
                 indicators: true,
             });
-            
+
             elems = document.querySelectorAll('.slider');
             M.Slider.init(elems, {});
 
@@ -1587,6 +1612,21 @@
             elems = document.querySelectorAll('.toolbar');
             M.FloatingActionButton.init(elems, {
                 toolbarEnabled: true,
+            });
+
+            //Ranges
+            noUiSlider.create(document.getElementById('test-slider'), {
+                start: [20, 80],
+                connect: true,
+                step: 1,
+                orientation: 'horizontal', // 'horizontal' or 'vertical'
+                range: {
+                    'min': 0,
+                    'max': 100
+                },
+                // format: wNumb({
+                //     decimals: 0
+                // })
             });
 
         });
