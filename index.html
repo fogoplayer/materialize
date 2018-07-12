@@ -4,11 +4,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
     <title>Futuristic Materialize-Demo</title>
-    <link href="futuristic-materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <link href="noUISlider/nouislider.css" type="text/css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/gh/fogoplayer/materialize@1.0.1/futuristic-materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="https://cdn.jsdelivr.net/gh/fogoplayer/materialize@1.0.1/noUISlider/nouislider.min.css" type="text/css" rel="stylesheet" />
     <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="futuristic-materialize.js"></script>
-    <script src="noUISlider/nouislider.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fogoplayer/materialize@1.0.1/futuristic-materialize.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fogoplayer/materialize@1.0.1/noUISlider/nouislider.min.js"></script>
 </head>
 
 <body>
@@ -17,14 +17,14 @@
             <div class="nav-wrapper">
                 <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
                 <a href="" class="brand-logo left">Logo</a>
-                <ul class="right">
-                    <li><a id='theme-dropdown' class="dropdown-trigger" href="#!" data-target="dropdown1">Change Theme<i class="material-icons right">arrow_drop_down</i></a></li>
+                <ul class="right" style="width:275px; max-width:60%">
+                    <li style="width:100%"><a id='theme-dropdown' class="dropdown-trigger" href="#!" data-target="dropdown1">Change Theme<i class="material-icons right">arrow_drop_down</i></a></li>
                 </ul>
             </div>
         </nav>
     </div>
 
-    <ul id="dropdown1" class="dropdown-content" style="position:fixed">
+    <ul id="dropdown1" class="dropdown-content" style="position:fixed;min-width:275px">
         <li><a style="color:var(--text-color)"><strong>Built-in Themes</strong></a></li>
         <li><a onclick="M.Dropdown.getInstance(document.getElementById('theme-dropdown')).close();M.changeTheme({theme:'red'})">Red</a></li>
         <li><a onclick="M.Dropdown.getInstance(document.getElementById('theme-dropdown')).close();M.changeTheme({theme:'blue'})">Blue</a></li>
@@ -32,15 +32,15 @@
         <li><a onclick="M.Dropdown.getInstance(document.getElementById('theme-dropdown')).close();M.changeTheme({theme:'orange'})">Orange</a></li>
         <div class="divider"></div>
         <li><a style="color:var(--text_)"><strong>Create Custom Theme</strong></a></li>
-        <li><a>Darkest color: <input id="darkest_color" type="text" onblur="M.changeTheme({[this.id]: this.value})" style="width:75px; margin:0px; float: right;height:auto"></a></li>
-        <li><a>Medium color: <input id="medium_color" type="text" onblur="M.changeTheme({[this.id]: this.value})" style="width:75px; margin:0px; float: right;height:auto"></a></li>
-        <li><a>Background color: <input id="background_color" type="text" onblur="M.changeTheme({[this.id]: this.value})" style="width:75px; margin:0px; float: right;height:auto"></a></li>
-        <li><a>Accent color: <input id="accent_color" type="text" onblur="M.changeTheme({[this.id]: this.value})" style="width:75px; margin:0px; float: right;height:auto"></a></li>
-        <li><a>Text color: <input id="text_color" type="text" onblur="M.changeTheme({[this.id]: this.value})" style="width:75px; margin:0px; float: right;height:auto"></a></li>
-        <li><a>Valid color: <input id="valid_color" type="text" onblur="M.changeTheme({[this.id]: this.value})" style="width:75px; margin:0px; float: right;height:auto"></a></li>
-        <li><a>Invalid color: <input id="invalid_color" type="text" onblur="M.changeTheme({[this.id]: this.value})" style="width:75px; margin:0px; float: right;height:auto"></a></li>
+        <li><a>Darkest color: <input placeholder="#000000" id="darkest_color" type="text" onblur="M.changeTheme({[this.id]: this.value})" style="width:75px; margin:0px; float: right;height:auto"></a></li>
+        <li><a>Medium color: <input placeholder="#222222" id="medium_color" type="text" onblur="M.changeTheme({[this.id]: this.value})" style="width:75px; margin:0px; float: right;height:auto"></a></li>
+        <li><a>Background color: <input placeholder="#333333" id="background_color" type="text" onblur="M.changeTheme({[this.id]: this.value})" style="width:75px; margin:0px; float: right;height:auto"></a></li>
+        <li><a>Accent color: <input placeholder="#0892D0" id="accent_color" type="text" onblur="M.changeTheme({[this.id]: this.value})" style="width:75px; margin:0px; float: right;height:auto"></a></li>
+        <li><a>Text color: <input placeholder="#ffffff" id="text_color" type="text" onblur="M.changeTheme({[this.id]: this.value})" style="width:75px; margin:0px; float: right;height:auto"></a></li>
+        <li><a>Valid color: <input placeholder="#4CAF50" id="valid_color" type="text" onblur="M.changeTheme({[this.id]: this.value})" style="width:75px; margin:0px; float: right;height:auto"></a></li>
+        <li><a>Invalid color: <input placeholder="#F44336" id="invalid_color" type="text" onblur="M.changeTheme({[this.id]: this.value})" style="width:75px; margin:0px; float: right;height:auto"></a></li>
         <div class="divider"></div>
-        <li><a href="https://github.com/fogoplayer/materialize/blob/futuristic-materialize/README.md" target="_blank" style="color:var(--text-color)">Learn more about theming</a></li>
+        <li><a href="https://github.com/fogoplayer/materialize/blob/futuristic-materialize/README.md" target="_blank"><i class="material-icons"> info</i>Learn more about theming</a></li>
     </ul>
 
     <div class="container">
@@ -783,7 +783,7 @@
         <h3>Fixed</h3>
         <p>See bottom right corner</p>
         <div class="fixed-action-btn">
-            <a class="btn-floating btn-large">
+            <a class="btn-floating btn-large" id="menu">
                 <i class="large material-icons">mode_edit</i>
             </a>
             <ul>
@@ -822,6 +822,20 @@
                     <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
                     <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
                 </ul>
+            </div>
+        </div>
+
+        <h3>FeatureDiscovery</h3>
+        <a class="btn" onclick="M.TapTarget.getInstance(document.querySelector('.tap-target')).open();">Click to show FeatureDiscovery</a>
+        <div class="tap-target" data-target="menu">
+            <div class="tap-target-content">
+                <h5>Title</h5>
+                <p>Explanation of your feature</p>
+                <div class="tap-target-wave" style="top: 344px; left: 344px; width: 112px; height: 112px;">
+                    <a class="btn-floating btn-large tap-target-origin" id="menu">
+                        <i class="large material-icons">mode_edit</i>
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -1169,7 +1183,7 @@
 
         <h1 id="table-of-contents">Table of Contents</h1>
         <div class="divider"></div>
-        
+
         <p>This table of contents is designed to be used in combination with <a href="https://materializecss.com/scrollspy.html" target="_blank">scrollspy</a>.</p>
         <ul class="section table-of-contents">
             <li><a class="active">Active item</a></li>
@@ -1303,7 +1317,7 @@
         <h4>Time Picker</h4>
         <input type="text" class="timepicker">
 
-        <h3 id="html5-range">HTML5 Range</h3>
+        <h3 id="range">Range</h3>
         <h4>Basic</h4>
         <form action="#">
             <p class="range-field">
@@ -1517,6 +1531,7 @@
         <li><a href="#parallax">Parallax</a></li>
         <li><a href="#preloader">Preloader</a></li>
         <li><a href="#table">Table</a></li>
+        <li><a href="#table-of-contents">Table Of Contents</a></li>
         <li><a href="#toast">Toast</a></li>
         <li><a href="#tooltip">Tooltip</a></li>
         <li><a href="#typography">Typography</a></li>
@@ -1524,12 +1539,11 @@
             <div class="divider"></div>
         </li>
         <li><a href="#forms" class="subheader">Forms</a></li>
-
         <li><a href="#autocomplete">Autocomplete</a></li>
         <li><a href="#checkboxes">Checkboxes</a></li>
         <li><a href="#chips">Chips</a></li>
         <li><a href="#pickers">Pickers</a></li>
-        <li><a href="#html5-range">HTML5 Range</a></li>
+        <li><a href="#range">Range</a></li>
         <li><a href="#radio-buttons">Radio Buttons</a></li>
         <li><a href="#select">Select</a></li>
         <li><a href="#switches">Switches</a></li>
@@ -1608,7 +1622,7 @@
             elems = document.querySelectorAll('.dropdown-trigger');
             M.Dropdown.init(elems, {
                 alignment: 'right',
-                constrainWidth: false,
+                constrainWidth: true,
                 coverTrigger: false,
                 closeOnClick: false,
             });
@@ -1624,6 +1638,9 @@
                 toolbarEnabled: true,
             });
 
+            elems = document.querySelectorAll('.tap-target');
+            M.TapTarget.init(elems, {});
+
             //Ranges
             noUiSlider.create(document.getElementById('test-slider'), {
                 start: [20, 80],
@@ -1634,9 +1651,6 @@
                     'min': 0,
                     'max': 100
                 },
-                // format: wNumb({
-                //     decimals: 0
-                // })
             });
 
         });
