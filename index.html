@@ -783,7 +783,7 @@
         <h3>Fixed</h3>
         <p>See bottom right corner</p>
         <div class="fixed-action-btn">
-            <a class="btn-floating btn-large">
+            <a class="btn-floating btn-large" id="menu">
                 <i class="large material-icons">mode_edit</i>
             </a>
             <ul>
@@ -825,6 +825,19 @@
             </div>
         </div>
 
+        <h3>FeatureDiscovery</h3>
+        <a class="btn" onclick="M.TapTarget.getInstance(document.querySelector('.tap-target')).open();">Click to show FeatureDiscovery</a>
+        <div class="tap-target" data-target="menu">
+            <div class="tap-target-content">
+                <h5>Title</h5>
+                <p>Explanation of your feature</p>
+                <div class="tap-target-wave" style="top: 344px; left: 344px; width: 112px; height: 112px;">
+                    <a class="btn-floating btn-large tap-target-origin" id="menu">
+                        <i class="large material-icons">mode_edit</i>
+                    </a>
+                </div>
+            </div>
+        </div>
 
         <h1 id="material-box">Material Box</h1>
         <div class="divider"></div>
@@ -1624,6 +1637,9 @@
             M.FloatingActionButton.init(elems, {
                 toolbarEnabled: true,
             });
+
+            elems = document.querySelectorAll('.tap-target');
+            M.TapTarget.init(elems, {});
 
             //Ranges
             noUiSlider.create(document.getElementById('test-slider'), {
