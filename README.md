@@ -1,7 +1,18 @@
 # futuristic-materialize
-It's material design, but cooler.
+It's Material Design, but cooler.
 
 A fork of MaterializeCSS (materializecss.com)
+
+## Get started
+Get the files from jsDelivr:
+```html
+<!--Futuristic Materialize-->
+<script src="https://cdn.jsdelivr.net/gh/fogoplayer/materialize@1.0.0/futuristic-materialize.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fogoplayer/materialize@1.0.0/futuristic-materialize.min.css">
+<!--noUISlider (Only needed if using the noUISlider range selector)-->
+<script src="https://cdn.jsdelivr.net/gh/fogoplayer/materialize@1.0.0/noUISlider/nouislider.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fogoplayer/materialize@1.0.0/noUISlider/nouislider.min.css">
+```
 
 ## Customization
 
