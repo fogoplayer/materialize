@@ -7,16 +7,16 @@ A fork of MaterializeCSS (materializecss.com)
 Get the files from jsDelivr:
 ```html
 <!--Futuristic Materialize-->
-<script src="https://cdn.jsdelivr.net/gh/fogoplayer/materialize@1.0.0/futuristic-materialize.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fogoplayer/materialize@1.0.0/futuristic-materialize.min.css">
+<script src="https://cdn.jsdelivr.net/gh/fogoplayer/materialize@1.0.1/futuristic-materialize.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fogoplayer/materialize@1.0.1/futuristic-materialize.min.css">
 <!--noUISlider (Only needed if using the noUISlider range selector)-->
-<script src="https://cdn.jsdelivr.net/gh/fogoplayer/materialize@1.0.0/noUISlider/nouislider.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fogoplayer/materialize@1.0.0/noUISlider/nouislider.min.css">
+<script src="https://cdn.jsdelivr.net/gh/fogoplayer/materialize@1.0.1/noUISlider/nouislider.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fogoplayer/materialize@1.0.1/noUISlider/nouislider.min.css">
 ```
 
 Download the source files from GitHub:  
-[.zip](https://github.com/fogoplayer/materialize/archive/1.0.0.zip)  
-[.tar.gz](https://github.com/fogoplayer/materialize/archive/1.0.0.tar.gz)
+[.zip](https://github.com/fogoplayer/materialize/archive/1.0.1.zip)  
+[.tar.gz](https://github.com/fogoplayer/materialize/archive/1.0.1.tar.gz)
 
 View the [example components](https://fogoplayer.github.io/materialize).
 
