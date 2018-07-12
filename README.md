@@ -31,5 +31,4 @@ Futuristic Materialize provides a few unique classes.
 
 
 ## todo
-- See if plugins really are required for scrollspy, and pushpin
-- Add FeatureDiscovery
+- FeatureDiscovery transparency
